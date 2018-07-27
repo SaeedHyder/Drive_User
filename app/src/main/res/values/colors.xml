@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Simple Colors -->
+    <color name="dark_blue">#2E3944</color>
+    <color name="blue">#0000FF</color>
+    <color name="red">#f00</color>
+    <color name="semi_tranparent">#77000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="light_grey">#858992</color>
+    <color name="c_light_blue">#1BB2E3</color>
+    <color name="c_dark_blue">#0953A4</color>
+    <color name="black">#000</color>
+    <color name="grey">#C0C0C0</color>
+    <color name="category_list_grey">#646464</color>
+    <color name="dark_grey">#3f3f3f</color>
+    <color name="cream">#E7E7E7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="sky_blue">#1481FF</color>
+    <color name="lite_green">#82FA58</color>
+    <color name="dark_green">#006400</color>
+    <color name="lite_yellow">#F2F5A9</color>
+    <color name="top_bar">#654F76</color>
+    <color name="off_white">#E9E9EA</color>
+    <color name="setting_field">#D0D0D0</color>
+    <color name="lite_purple">#9C94A3</color>
+    <color name="gray_dark">#929292</color>
+
+
+
+    <!-- App specific colors -->
+    <color name="forgot_pass_color">#BB4000</color>
+    <color name="notification_date_color">#D15801</color>
+    <color name="text_color">#654F76</color>
+    <color name="colorPrimaryDark">#0c3644</color>
+    <color name="color_rbtn">#0E8593</color>
+    <color name="holo_blue">#FF33B5E5</color>
+    <color name="progress_start">#B31025</color>
+    <color name="progress_end">#797B79</color>
+    <color name="blue_chat">#4896CA</color>
+    <color name="sidemenu">#62A6D8</color>
+    <color name="button_color">#37949c</color>
+    <color name="button_dark_color">#0c3644</color>
+    <color name="facebook_button_color">#3b5998</color>
+    <color name="edit_text_color">#e8e8e9</color>
+    <color name="plate_background">#f1f1f1</color>
+
+
+    <!--app drive2-->
+
+    <color name="app_golden">#b5a88f</color>
+    <color name="app_golden2">#B89C75</color>
+    <color name="app_offwhite">#CED2DA</color>
+    <color name="facebookBlue">#3C5581</color>
+    <color name="lineViewColor">#5E6065</color>
+    <color name="appHintColor">#E7EBED</color>
+    <color name="appBlackColor">#171E28</color>
+    <color name="appLightgray">#E8E8EA</color>
+
+
+    <color name="apptextcolor">#5C5C5C</color>
+    <color name="upcoming_color">#958673</color>
+    <color name="light_golden">#C9BA9D</color>
+
+
+</resources>

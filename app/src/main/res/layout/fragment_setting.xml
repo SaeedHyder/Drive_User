@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="onClick"
+    android:background="@drawable/backgroung_faded"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_notificationToggel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/x15"
+        android:visibility="gone">
+
+        <com.ingic.driveuser.ui.views.AnyTextView
+            android:id="@+id/txt_notification"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:text="@string/notification"
+            android:textColor="@color/black"
+            android:textSize="@dimen/x16"
+            app:typeface="Roboto-Regular.ttf" />
+
+        <ToggleButton
+            android:id="@+id/toggle_notifications"
+            android:layout_width="@dimen/x50"
+            android:layout_height="@dimen/x35"
+            android:background="@drawable/selector_toggle"
+            android:checked="true"
+            android:gravity="right|center_vertical"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:layout_marginTop="@dimen/x3"
+        android:alpha="0.2"
+        android:background="@color/lineViewColor"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_ChangePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:padding="@dimen/x15">
+
+        <com.ingic.driveuser.ui.views.AnyTextView
+            android:id="@+id/txt_changePassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Change_Password"
+            android:textColor="@color/black"
+            android:textSize="@dimen/x16"
+            app:typeface="Roboto-Regular.ttf" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:layout_marginTop="@dimen/x3"
+        android:alpha="0.2"
+        android:background="@color/lineViewColor" />
+
+    <LinearLayout
+        android:id="@+id/ll_SelectLangToggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/x15"
+        android:visibility="visible">
+
+
+        <com.ingic.driveuser.ui.views.AnyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/language"
+            android:textColor="@color/black"
+            android:textSize="@dimen/x16"
+            app:typeface="Roboto-Regular.ttf" />
+
+
+        <ToggleButton
+            android:id="@+id/toggle_language"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x35"
+            android:background="@drawable/language_toggle"
+            android:checked="true"
+            android:gravity="right|center_vertical"
+            android:text=""
+            android:textOff=""
+            android:textOn=""
+            />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:layout_marginTop="@dimen/x3"
+        android:alpha="0.2"
+        android:background="@color/lineViewColor" />
+
+    <LinearLayout
+        android:id="@+id/ll_DriverPreference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/x15">
+
+        <com.ingic.driveuser.ui.views.AnyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/driver_preference"
+            android:textColor="@color/black"
+            android:textSize="@dimen/x16"
+            app:typeface="Roboto-Regular.ttf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x7"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+                <RadioButton
+                    android:id="@+id/radio_Male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/x10"
+                    android:layout_weight="1"
+                    android:button="@drawable/selector_radiobtn"
+                    android:checked="true"
+                    android:paddingLeft="@dimen/x7"
+                    android:text="@string/male"
+                    android:textColor="#808791" />
+
+                <RadioButton
+                    android:id="@+id/radio_Female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/selector_radiobtn"
+                    android:checked="false"
+                    android:paddingLeft="@dimen/x7"
+                    android:text="@string/female"
+                    android:textColor="#808791" />
+
+                <RadioButton
+                    android:id="@+id/radio_Any"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/selector_radiobtn"
+                    android:checked="false"
+                    android:paddingLeft="@dimen/x7"
+                    android:text="@string/any"
+                    android:textColor="#808791" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:layout_marginTop="@dimen/x3"
+        android:alpha="0.2"
+        android:background="@color/lineViewColor" />
+
+    <LinearLayout
+        android:id="@+id/ll_SelectLang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/x15"
+        android:visibility="gone">
+
+
+        <com.ingic.driveuser.ui.views.AnyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/select_language"
+            android:textColor="@color/black"
+            android:textSize="@dimen/x16"
+            app:typeface="Roboto-Regular.ttf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x7"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/radioGroupLanguage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+
+                <RadioButton
+                    android:id="@+id/radio_arbi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/selector_radiobtn"
+                    android:checked="true"
+                    android:drawableStart="@drawable/drive_arbi"
+                    android:paddingLeft="@dimen/x7"
+                    android:textColor="#808791" />
+
+                <RadioButton
+                    android:id="@+id/radio_english"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/selector_radiobtn"
+                    android:checked="false"
+                    android:paddingLeft="@dimen/x7"
+                    android:text="@string/english"
+                    android:textColor="#808791" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:layout_marginTop="@dimen/x3"
+        android:alpha="0.2"
+        android:background="@color/lineViewColor"
+        android:visibility="gone" />
+
+</LinearLayout>

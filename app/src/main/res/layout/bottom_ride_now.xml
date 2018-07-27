@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/drive_box2"
+    android:clickable="false"
+    android:orientation="vertical"
+    app:layout_behavior="com.ingic.driveuser.ui.views.ExpandedBottomSheetBehavior">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x100"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x10"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/x50"
+                android:layout_gravity="center_vertical"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:layout_marginRight="@dimen/x15"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/drive_pickup_circle" />
+
+                <com.ingic.driveuser.ui.views.AnyTextView
+                    android:id="@+id/txt_pickup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/x10"
+                    android:layout_toEndOf="@+id/imageView"
+                    android:alpha="0.5"
+                    android:gravity="start"
+                    android:padding="@dimen/x3"
+                    android:text="@string/pickup_location"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/x10"
+                    app:typeface="Roboto-Regular.ttf" />
+
+                <com.ingic.driveuser.ui.views.AnyTextView
+                    android:id="@+id/txt_pick_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_pickup"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_toEndOf="@+id/imageView"
+                    android:alpha="0.8"
+                    android:gravity="start|center_vertical"
+                    android:scrollbars="horizontal"
+                    android:singleLine="true"
+                    android:text="@string/lorem_ipsum"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/x14"
+                    app:typeface="Roboto-Regular.ttf" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/imageView"
+                    android:layout_marginLeft="@dimen/x24"
+                    android:src="@drawable/line1" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/x11"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/imageView"
+                    android:layout_marginLeft="@dimen/x24"
+                    android:src="@drawable/line1" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x1"
+                    android:layout_marginLeft="@dimen/x25"
+                    android:layout_marginRight="@dimen/x15"
+                    android:layout_marginTop="@dimen/x5"
+                    android:alpha="0.2"
+                    android:background="@drawable/text" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/x50"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:visibility="visible">
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/imageView_destination"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/x24"
+                    android:src="@drawable/line1" />
+
+                <ImageView
+                    android:id="@+id/imageView_destination"
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:layout_marginRight="@dimen/x15"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/drive_destination_icon" />
+
+                <com.ingic.driveuser.ui.views.AnyTextView
+                    android:id="@+id/txt_destination"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/x10"
+                    android:layout_toEndOf="@+id/imageView_destination"
+                    android:alpha="0.5"
+                    android:gravity="start"
+                    android:padding="@dimen/x3"
+                    android:text="Destination Location"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/x10"
+                    app:typeface="Roboto-Regular.ttf" />
+
+                <com.ingic.driveuser.ui.views.AnyTextView
+                    android:id="@+id/txt_destination_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="@dimen/x5"
+                    android:layout_toEndOf="@+id/imageView_destination"
+                    android:alpha="0.8"
+                    android:gravity="start|center_vertical"
+                    android:scrollbars="horizontal"
+                    android:singleLine="true"
+                    android:text="@string/lorem_ipsum"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/x14"
+                    app:typeface="Roboto-Regular.ttf" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:layout_marginLeft="@dimen/x50"
+                android:layout_marginRight="@dimen/x15"
+                android:layout_marginTop="@dimen/x5"
+                android:alpha="0.2"
+                android:background="@drawable/text" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_peakFactor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:alpha="0.2"
+                android:background="@drawable/text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x35"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <com.ingic.driveuser.ui.views.AnyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/x3"
+                    android:gravity="center"
+                    android:text="@string/peak_factor1"
+                    android:textColor="@color/black"
+                    app:typeface="Roboto-Regular.ttf" />
+
+                <com.ingic.driveuser.ui.views.AnyTextView
+                    android:id="@+id/txt_peakFactor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="20"
+                    android:textColor="@color/black"
+                    app:typeface="Roboto-Regular.ttf" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:alpha="0.2"
+                android:background="@drawable/text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/x15"
+            android:background="@drawable/rounded_gray_rect"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x50"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_car_type"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/x15">
+
+                    <ImageView
+                        android:id="@+id/iv_cartype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/cartype" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <com.ingic.driveuser.ui.views.AnyTextView
+                            android:id="@+id/car_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/x7"
+                            android:gravity="center_vertical"
+                            android:text="Car Type"
+                            android:textColor="@color/apptextcolor"
+                            android:textSize="@dimen/x12"
+                            app:typeface="@string/font_normal" />
+
+
+                        <com.ingic.driveuser.ui.views.AnyTextView
+                            android:id="@+id/txt_car_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/x7"
+                            android:text="Business"
+                            android:textColor="@color/apptextcolor"
+                            android:textSize="@dimen/x12"
+                            android:visibility="gone"
+                            app:typeface="@string/font_normal" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/x1"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey" />
+
+                <LinearLayout
+                    android:id="@+id/ll_promoCode"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/x15">
+
+                    <ImageView
+                        android:id="@+id/iv_promoCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/promocode" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <com.ingic.driveuser.ui.views.AnyTextView
+                            android:id="@+id/promo_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/x7"
+                            android:layout_toEndOf="@+id/iv_cartype"
+                            android:text="Promo Code"
+                            android:textColor="@color/apptextcolor"
+                            android:textSize="@dimen/x12"
+                            app:typeface="@string/font_normal" />
+
+                        <com.ingic.driveuser.ui.views.AnyTextView
+                            android:id="@+id/txt_promo_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/x7"
+                            android:text="XX-12818-45"
+                            android:textColor="@color/apptextcolor"
+                            android:textSize="@dimen/x12"
+                            android:visibility="gone"
+                            app:typeface="@string/font_normal" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/grey" />
+
+            <LinearLayout
+                android:id="@+id/ll_schedule_time"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x50"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/ll_pickup_date"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/x15">
+
+                    <ImageView
+                        android:id="@+id/iv_pickup_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/pickupdate" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <com.ingic.driveuser.ui.views.AnyTextView
+                            android:id="@+id/pickup_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/x7"
+                            android:text="Pickup Date"
+                            android:textColor="@color/apptextcolor"
+                            android:textSize="@dimen/x12"
+                            app:typeface="@string/font_normal" />
+
+                        <com.ingic.driveuser.ui.views.AnyTextView
+                            android:id="@+id/txt_pickup_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/x7"
+
+                            android:textColor="@color/apptextcolor"
+                            android:textSize="@dimen/x12"
+                            android:visibility="gone"
+                            app:typeface="@string/font_normal" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/x1"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey" />
+
+                <LinearLayout
+                    android:id="@+id/ll_pickupTime"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/x15">
+
+                    <ImageView
+                        android:id="@+id/iv_pickupTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/pickuptime" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <com.ingic.driveuser.ui.views.AnyTextView
+                            android:id="@+id/pickupTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/x7"
+                            android:text="Pickup Time"
+                            android:textColor="@color/apptextcolor"
+                            android:textSize="@dimen/x12"
+                            app:typeface="@string/font_normal" />
+
+                        <com.ingic.driveuser.ui.views.AnyTextView
+                            android:id="@+id/txt_pickupTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/x7"
+                            android:textColor="@color/apptextcolor"
+                            android:textSize="@dimen/x11"
+                            android:visibility="gone"
+                            app:typeface="@string/font_normal" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/grey"
+                android:orientation="vertical"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x50"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_payment_method"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/x15">
+
+                    <ImageView
+                        android:id="@+id/iv_payment_method"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/payment" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+
+                        <com.ingic.driveuser.ui.views.AnyTextView
+                            android:id="@+id/payment_method"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/x7"
+                            android:gravity="center_vertical"
+                            android:text="Payment Method"
+                            android:textColor="@color/apptextcolor"
+                            android:textSize="@dimen/x12"
+                            app:typeface="@string/font_normal" />
+
+                        <com.ingic.driveuser.ui.views.AnyTextView
+                            android:id="@+id/txt_payment_method"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/x7"
+                            android:gravity="center_vertical"
+                            android:text="Cash"
+                            android:textColor="@color/apptextcolor"
+                            android:textSize="@dimen/x12"
+                            android:visibility="gone"
+                            app:typeface="@string/font_normal" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/x1"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey" />
+
+                <LinearLayout
+                    android:id="@+id/ll_estimated_fare"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/x15">
+
+                    <ImageView
+                        android:id="@+id/iv_estimated_fare"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/estimatedfare" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+
+                        <com.ingic.driveuser.ui.views.AnyTextView
+                            android:id="@+id/estimated_fare"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/x7"
+                            android:gravity="center_vertical"
+                            android:text="@string/estimated_fare"
+                            android:textColor="@color/apptextcolor"
+                            android:textSize="@dimen/x12"
+                            app:typeface="@string/font_normal" />
+
+                        <com.ingic.driveuser.ui.views.AnyTextView
+                            android:id="@+id/txt_estimated_fare"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/x7"
+                            android:text="100-135"
+                            android:textColor="@color/apptextcolor"
+                            android:textSize="@dimen/x12"
+                            android:visibility="gone"
+                            app:typeface="@string/font_normal" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/SubmitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/x10"
+            android:layout_marginLeft="@dimen/x16"
+            android:layout_marginRight="@dimen/x16"
+            android:background="@drawable/rounded_button"
+            android:text="@string/request_go"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/x16" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

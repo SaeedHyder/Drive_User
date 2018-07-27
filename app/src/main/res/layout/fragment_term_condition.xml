@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/x20">
+
+    <TextView
+        android:id="@+id/txt_term_condition"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/chk_read"
+        android:layout_marginBottom="@dimen/x15"
+        android:gravity="start|end"
+        android:paddingTop="@dimen/x10"
+        android:paddingBottom="@dimen/x10"
+        android:scrollbars="vertical"
+        android:scrollbarFadeDuration="1"
+        android:scrollIndicators="none"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <CheckBox
+        android:id="@+id/chk_read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:buttonTint="@color/button_color"
+        android:text="@string/i_have_read_the_term_and_conditions" />
+
+
+</RelativeLayout>

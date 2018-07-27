@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- mark favourite message -->
+    <string name="successful">Successfully marked as favourites</string>
+
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+
+    <string name="api_key">AIzaSyCCt7zkM6FJAd5y5AmpPfDHJsFn2azAeQM</string>
+    <string name="app_name">Drive User</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="facebook_app_id">146247962744663</string>
+    <string name="fb_login_protocol_scheme">fb146247962744663</string>
+    <!--<strdrive_namename="facebook_app_id">674632155971845</string>
+    <strdrive_namename="facebook_app_id_test">175703936145004</string>
+-->
+    <!-- Error Messages -->
+    <string name="error_passwords_do_not_match">Passwords do not match.</string>
+    <string name="error_could_not_connect">Could not connect to server. Please try again later.</string>
+    <string name="error_cannot_create_account">Account already exists!</string>
+    <string name="error_cannot_sign_in">Please provide correct Email and Password</string>
+    <string name="crash_toast_text">Sorry for inconvenience, we will get this issue fixed!</string>
+    <string name="msg_connection_failed">Error! Connection to server failed.</string>
+    <string name="msg_connection_error">Please check your internet connection</string>
+
+    <!-- Date Time -->
+    <string name="common.months">months</string>
+    <string name="common.weeks">weeks</string>
+    <string name="common.days">days</string>
+    <string name="common.hrs">hrs</string>
+    <string name="common.mins">mins</string>
+    <string name="common.secs">secs</string>
+    <string name="common.ago">ago</string>
+
+    <!-- AnyTextView -->
+    <string name="typeface_not_found">Typeface %$1 not found, or could not be loaded.
+        Showing default typeface.</string>
+    <string name="app">AnyTextView</string>
+    <string name="assets_fonts_folder">fonts/</string>
+    <string name="txt_enter_phone_no">Enter Phone No.</string>
+    <string name="txt_enter_email_address">Enter Email Address <font fgcolor="#75000000">(Optional)</font></string>
+    <string name="txt_register_text">Verificaion process is required to verify the phone no.</string>
+    <string name="message_quit">Are you sure you want to exit?</string>
+    <string name="message_wait">Please wait while data is loading.</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="click_here">  Click Here</string>
+    <string name="imgdesc_signup">Sign Up</string>
+    <string name="imgdesc_signin">Sign In</string>
+    <string name="back_to_login"><u>Back to Login</u></string>
+    <string name="remember_me">remember me</string>
+    <string name="login">Login</string>
+    <string name="user_name">Full Name</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="categories">Categories</string>
+    <string name="messages">Messages</string>
+    <string name="settings">Settings</string>
+    <string name="search_hint">Search Ads, User or Category</string>
+    <string name="password_sent">Your password will be sent to your \nemail address</string>
+    <string name="change_password">CHANGE PASSWORD</string>
+    <string name="reason_for_rejection">REASON</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="via_email">Via Email</string>
+    <string name="via_sms">Via SMS</string>
+    <string name="tell_a_friend">TELL A FRIEND</string>
+    <string name="contact_email">contact@voltas.com</string>
+    <string name="contact_phone">5555 555 555</string>
+    <string name="enter_text">Enter Text</string>
+    <string name="you_paid">YOU PAID</string>
+    <string name="tap_to_rate">TAP A STAR TO RATE DRIVER</string>
+    <string name="contact_address">Columbus College of Arts, New York</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and types
+        etting industry. Lorem Ipsum has been the industrys standard dummy text ever sinc
+        e the 1500s, when an unknown printer took a galley of type and scrambled it t
+        o make a type specimen book. It has survived not only five centuries, but
+         also the leap into electronic typesetting, remaining essentially unchanged
+         . It was popularised in the 1960s with the release of Letraset sheets cont
+         aining Lorem Ipsum passages, and more recently with desktop publishing so
+         ftware like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="lorem_ipsum_small">Lorem Ipsum is simply dummy text of the printing and types
+        etting industry. Lorem Ipsum has been the industrys standard dummy text ever sinc
+        e the 1500s</string>
+    <string name="this_is_login_fragment">This is Login Fragment</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="login_with_facebook">Login With Facebook</string>
+    <string name="new_user_create_account">New to Drive? Sign Up Now</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_conform_password">Enter Confirm Password</string>
+    <string name="enter_city">Enter City</string>
+    <string name="enter_state">Enter State</string>
+    <string name="enter_valid_password">Enter Valid Password</string>
+    <string name="enter_phone">Enter Phone Number</string>
+    <string name="enter_valid_number_error">Enter Valid Number</string>
+    <string name="create_account">Sign Up Now</string>
+    <string name="enter_e_mail_address_which_you_used_at_the_time_of_signup">Enter E-mail Address which you used at the time of Signup</string>
+    <string name="submit">Submit</string>
+    <string name="forgot_password_heading">Forgot Password</string>
+    <string name="enter_valid_email">Enter Valid Email</string>
+    <string name="reset_password_message">An email has been sent to your account with password reset link</string>
+    <string name="reset">Reset</string>
+    <string name="we_ll_text_you_a_code_to_confirm_your_number">We\'ll text you a code to Confirm your number</string>
+    <string name="dummy_number">9741 4507 600</string>
+    <string name="enter_verification_code">Enter Verification Code</string>
+    <string name="a_verification_code_has_been_send_to_your_mobile_phone">A verification code has been sent to your mobile phone and email</string>
+    <string name="reset_code">Resend Code</string>
+    <string name="where_to">Where to...</string>
+    <string name="pickup_location">Pickup Location</string>
+    <string name="confirm">Confirm</string>
+    <string name="API_KEY">AIzaSyCCt7zkM6FJAd5y5AmpPfDHJsFn2azAeQM</string>
+
+    <string name="enter_username">Enter UserName</string>
+    <string name="enter_contactUs">Fill the contact form first</string>
+    <string name="enter_currentAddress">Enter Current Address</string>
+    <string name="enter_zipCode">Enter Zip Code</string>
+    <string name="enter_dob">Enter Date Of Birth</string>
+    <string name="passwordLength">Password should be more than 7</string>
+    <string name="samePassword">New password should be changed from previous password</string>
+    <string name="numberLength">Number should be more than 12</string>
+
+    <string name="enter_email">Enter Valid Email</string>
+    <string name="to_accept"> to accept </string>
+    <string name="terms_and_condition"> <u>Terms and Conditions</u></string>
+    <string name="i_have_read_the_term_and_conditions">  I have read the </string>
+    <string name="terms_conditons">Terms and Conditions</string>
+    <string name="connection_lost">No Internet Found</string>
+    <string name="set_pickup_location">SET PICKUP LOCATION</string>
+
+    <string name="Edit_Profile">Edit Profile</string>
+    <string name="no_data">No Data To Show</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="Messages">Messages</string>
+    <string name="Change_Password">Change Password</string>
+    <string name="update">Update</string>
+    <string name="cancel">Cancel</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="Invite_and_earn"><![CDATA[Invite & Earn]]></string>
+    <string name="share_this_invite_code_with_your_nfriends_and_earn_free_rides">Share this invite code with your \n friends and earn free rides!</string>
+    <string name="ride_later">Ride Later</string>
+    <string name="ride_now">Ride Now</string>
+    <string name="internet_not_connected">Internet not Available</string>
+    <string name="gps_question">Location is turned of Do you want to enable it ?</string>
+    <string name="gps_yes">Yes</string>
+    <string name="gps_no">No</string>
+    <string name="wifi_question">No Network found  Do you want to enable Wifi ?</string>
+    <string name="popular">Popular</string>
+    <string name="fares_are_high_due_to_high_demand">Fares are high due to high demand</string>
+    <string name="done">Done</string>
+    <string name="estimated_fare">Estimated Fare</string>
+    <string name="estimated_fare_">Estimated Fare:</string>
+    <string name="capacity">Capacity</string>
+    <string name="smaller_smater_cheaper_rides">Smaller, smater, cheaper rides</string>
+    <string name="finding_your_ride">Finding Your Ride</string>
+    <string name="connecting_with_nearest_driver">Connecting with nearest driver...</string>
+    <string name="cancel_ride">Cancel Ride</string>
+    <string name="destination_location">Destination Location</string>
+    <string name="drive_with_fastcab">Drive with Drive</string>
+    <string name="fastcab">Drive</string>
+
+    <string name="set_location_on_map">Set Location on Map</string>
+
+    <string name="Contact_Us">Contact Us</string>
+    <string name="are_you_sure_you_want_to_cancel_ride">Are you sure you want to cancel ride?</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to logout?</string>
+    <string name="logout">Logout</string>
+    <string name="request_for_cancellation">Reason For Cancellation</string>
+    <string name="rides">Rides</string>
+    <string name="miles">Miles</string>
+    <string name="rating">Rating</string>
+    <string name="Ride_Feedback">Ride Feedback</string>
+    <string name="driving">Driving</string>
+    <string name="comfort">Comfort</string>
+    <string name="navigation">Navigation</string>
+    <string name="car_quality">Car Quality</string>
+    <string name="what_could_be_improved">What could be improved?</string>
+    <string name="others_specify">Others Specify</string>
+    <string name="type_your_message_here">Type your message here....</string>
+    <string name="comment">Comment...</string>
+    <string name="rate_app">Rate App</string>
+    <string name="rate">Rate</string>
+    <string name="rate_last">Rate Your Last Trip</string>
+    <string name="rate_driver">Rate Driver</string>
+    <string name="submit_rating">Submit Ratings</string>
+    <string name="promo_code">Promo Code</string>
+    <string name="request_go">Request Go</string>
+
+    <string name="Your_Trips">Your Trips</string>
+
+    <string name="notification">Notifications</string>
+    <string name="your_trips">Your Trips</string>
+    <string name="payment">Payment</string>
+    <string name="contact">Contact</string>
+    <string name="about_us">About Us</string>
+    <string name="invite_earn"><![CDATA[Invite & Earn]]></string>
+    <string name="arabic_english">Arabic - English</string>
+    <string name="logoout">Logout</string>
+    <string name="valid_email">Please Enter Valid Email</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="new_user_text">New User?</string>
+    <string name="verufy_number">Verify Number</string>
+    <string name="fastcap_com"><u>fastcab.com</u></string>
+    <string name="if_you_cancel_5_minutes_after_requesting_na_fee_may_apply_for_details_visit">If you cancel 5 minutes after requesting.a certain charges may apply</string>
+    <string name="payment_method">Payment Methods</string>
+    <string name="card_detail">Card Details</string>
+    <string name="date_before_error">Selected Date is before Current Date</string>
+    <string name="enter_cc_number">Enter Credit Card Number</string>
+    <string name="cc_valid_error">Enter Valid Credit Card Number</string>
+    <string name="expiredate_error">Enter Credit Card Expire Date</string>
+    <string name="cvv_error">Enter CVV Number</string>
+    <string name="cc_name_error">Enter Name of the Card Owner</string>
+    <string name="select_a_pickup_date_and_time">Select a Pickup Date and Time</string>
+    <string name="select_pickup_time">Select Pickup Time</string>
+    <string name="less_time_error">Selected Time is in the Past</string>
+    <string name="select_pickup_date">Select Pickup Date</string>
+    <string name="select_time_pickup">Select Pickup Time</string>
+    <string name="select_pickup_date_first">Select Pickup Date First</string>
+    <string name="pickup_date_and_time">Pickup Date And Time</string>
+    <string name="schedule_ride">Schedule ride</string>
+    <string name="schedule_new_trip">Schedule New Trip</string>
+    <string name="your_ride">Your Ride</string>
+    <string name="notifications">Notifications</string>
+    <string name="submit_rating_last">Rate Your Last Trip</string>
+    <string name="setting">Settings</string>
+    <string name="date_after_error">Selected Date is After Current Date</string>
+    <string name="rate_title">Rate</string>
+    <string name="economy">Economy</string>
+    <string name="business">Business</string>
+    <string name="vip">Vip</string>
+    <string name="are_you_sure_you_want_to_cancel_ridee">Are you sure you want to cancel ride?</string>
+    <string name="current_password">Current Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="credit_card_number">Card Number</string>
+    <string name="expiration_date">Expiration Date</string>
+    <string name="cvv">CVV</string>
+    <string name="name_appearing_on_card">Name Appearing On Card</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="male">Male</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="zip_code">Zip Code</string>
+    <string name="invitation_code">Invitation Code (optional)</string>
+    <string name="abc_email_com">john@email.com</string>
+    <string name="cash_on_delivery">Cash On Delivery</string>
+    <string name="credit_card">Credit / Debit Card</string>
+    <string name="email">Email</string>
+    <string name="current_address">Current Address</string>
+    <string name="Mobile_Number">Mobile Number</string>
+    <string name="dob">Date of Birth</string>
+    <string name="Fare">Fare</string>
+    <string name="Past">Past</string>
+    <string name="Upcoming">Upcoming</string>
+    <string name="Send">Send</string>
+    <string name="Ride">Ride</string>
+    <string name="TimeDate">Time/Date:</string>
+    <string name="Tip">Tip</string>
+    <string name="Promo_Gift_Code">Promo Code</string>
+    <string name="Enter_a_promo">Add your promo code here to unlock\nspecial offers and discounted fares.</string>
+    <string name="ok">Ok</string>
+    <string name="type">Type:</string>
+    <string name="gender">Gender</string>
+    <!--FACEBOOK APP-->
+
+    <string name="entrycode_error">Enter Valid Code</string>
+    <string name="sign_with_facebook">Sign Up With Facebook</string>
+    <string name="messenger_share_error">Messenger have not been installed</string>
+    <string name="whatsapp_share_error">Whatsapp have not been installed</string>
+    <string name="Share_message">Hey this is a test Promo Code  : </string>
+
+    <string name="driver_app_package_name">com.ingic.drivedriver</string>
+
+    <string name="remaining_payment">Remaining Payment</string>
+    <string name="ride_not_paid_dialog">Your last ride charges are not paid you can pay by Credit card do you want to pay it ?</string>
+    <string name="driver_not_found_error">Sorry no Drivers are Available. Try again later</string>
+
+    <!--COUNTRY CODE-->
+    <string-array name="CountryCodes">
+        <item>93,AF</item>
+        <item>355,AL</item>
+        <item>213,DZ</item>
+        <item>376,AD</item>
+        <item>244,AO</item>
+        <item>672,AQ</item>
+        <item>54,AR</item>
+        <item>374,AM</item>
+        <item>297,AW</item>
+        <item>61,AU</item>
+        <item>43,AT</item>
+        <item>994,AZ</item>
+        <item>973,BH</item>
+        <item>880,BD</item>
+        <item>375,BY</item>
+        <item>32,BE</item>
+        <item>501,BZ</item>
+        <item>229,BJ</item>
+        <item>975,BT</item>
+        <item>591,BO</item>
+        <item>387,BA</item>
+        <item>267,BW</item>
+        <item>55,BR</item>
+        <item>673,BN</item>
+        <item>359,BG</item>
+        <item>226,BF</item>
+        <item>95,MM</item>
+        <item>257,BI</item>
+        <item>855,KH</item>
+        <item>237,CM</item>
+        <item>1,CA</item>
+        <item>238,CV</item>
+        <item>236,CF</item>
+        <item>235,TD</item>
+        <item>56,CL</item>
+        <item>86,CN</item>
+        <item>61,CX</item>
+        <item>61,CC</item>
+        <item>57,CO</item>
+        <item>269,KM</item>
+        <item>242,CG</item>
+        <item>243,CD</item>
+        <item>682,CK</item>
+        <item>506,CR</item>
+        <item>385,HR</item>
+        <item>53,CU</item>
+        <item>357,CY</item>
+        <item>420,CZ</item>
+        <item>45,DK</item>
+        <item>253,DJ</item>
+        <item>670,TL</item>
+        <item>593,EC</item>
+        <item>20,EG</item>
+        <item>503,SV</item>
+        <item>240,GQ</item>
+        <item>291,ER</item>
+        <item>372,EE</item>
+        <item>251,ET</item>
+        <item>500,FK</item>
+        <item>298,FO</item>
+        <item>679,FJ</item>
+        <item>358,FI</item>
+        <item>33,FR</item>
+        <item>689,PF</item>
+        <item>241,GA</item>
+        <item>220,GM</item>
+        <item>995,GE</item>
+        <item>49,DE</item>
+        <item>233,GH</item>
+        <item>350,GI</item>
+        <item>30,GR</item>
+        <item>299,GL</item>
+        <item>502,GT</item>
+        <item>224,GN</item>
+        <item>245,GW</item>
+        <item>592,GY</item>
+        <item>509,HT</item>
+        <item>504,HN</item>
+        <item>852,HK</item>
+        <item>36,HU</item>
+        <item>91,IN</item>
+        <item>62,ID</item>
+        <item>98,IR</item>
+        <item>964,IQ</item>
+        <item>353,IE</item>
+        <item>44,IM</item>
+        <item>972,IL</item>
+        <item>39,IT</item>
+        <item>225,CI</item>
+        <item>81,JP</item>
+        <item>962,JO</item>
+        <item>7,KZ</item>
+        <item>254,KE</item>
+        <item>686,KI</item>
+        <item>965,KW</item>
+        <item>996,KG</item>
+        <item>856,LA</item>
+        <item>371,LV</item>
+        <item>961,LB</item>
+        <item>266,LS</item>
+        <item>231,LR</item>
+        <item>218,LY</item>
+        <item>423,LI</item>
+        <item>370,LT</item>
+        <item>352,LU</item>
+        <item>853,MO</item>
+        <item>389,MK</item>
+        <item>261,MG</item>
+        <item>265,MW</item>
+        <item>60,MY</item>
+        <item>960,MV</item>
+        <item>223,ML</item>
+        <item>356,MT</item>
+        <item>692,MH</item>
+        <item>222,MR</item>
+        <item>230,MU</item>
+        <item>262,YT</item>
+        <item>52,MX</item>
+        <item>691,FM</item>
+        <item>373,MD</item>
+        <item>377,MC</item>
+        <item>976,MN</item>
+        <item>382,ME</item>
+        <item>212,MA</item>
+        <item>258,MZ</item>
+        <item>264,NA</item>
+        <item>674,NR</item>
+        <item>977,NP</item>
+        <item>31,NL</item>
+        <item>599,AN</item>
+        <item>687,NC</item>
+        <item>64,NZ</item>
+        <item>505,NI</item>
+        <item>227,NE</item>
+        <item>234,NG</item>
+        <item>683,NU</item>
+        <item>850,KP</item>
+        <item>47,NO</item>
+        <item>968,OM</item>
+        <item>92,PK</item>
+        <item>680,PW</item>
+        <item>507,PA</item>
+        <item>675,PG</item>
+        <item>595,PY</item>
+        <item>51,PE</item>
+        <item>63,PH</item>
+        <item>870,PN</item>
+        <item>48,PL</item>
+        <item>351,PT</item>
+        <item>1,PR</item>
+        <item>974,QA</item>
+        <item>40,RO</item>
+        <item>7,RU</item>
+        <item>250,RW</item>
+        <item>590,BL</item>
+        <item>685,WS</item>
+        <item>378,SM</item>
+        <item>239,ST</item>
+        <item>966,SA</item>
+        <item>221,SN</item>
+        <item>381,RS</item>
+        <item>248,SC</item>
+        <item>232,SL</item>
+        <item>65,SG</item>
+        <item>421,SK</item>
+        <item>386,SI</item>
+        <item>677,SB</item>
+        <item>252,SO</item>
+        <item>27,ZA</item>
+        <item>82,KR</item>
+        <item>34,ES</item>
+        <item>94,LK</item>
+        <item>290,SH</item>
+        <item>508,PM</item>
+        <item>249,SD</item>
+        <item>597,SR</item>
+        <item>268,SZ</item>
+        <item>46,SE</item>
+        <item>41,CH</item>
+        <item>963,SY</item>
+        <item>886,TW</item>
+        <item>992,TJ</item>
+        <item>255,TZ</item>
+        <item>66,TH</item>
+        <item>228,TG</item>
+        <item>690,TK</item>
+        <item>676,TO</item>
+        <item>216,TN</item>
+        <item>90,TR</item>
+        <item>993,TM</item>
+        <item>688,TV</item>
+        <item>971,AE</item>
+        <item>256,UG</item>
+        <item>44,GB</item>
+        <item>380,UA</item>
+        <item>598,UY</item>
+        <item>1,US</item>
+        <item>998,UZ</item>
+        <item>678,VU</item>
+        <item>39,VA</item>
+        <item>58,VE</item>
+        <item>84,VN</item>
+        <item>681,WF</item>
+        <item>967,YE</item>
+        <item>260,ZM</item>
+        <item>263,ZW</item>
+    </string-array>
+
+    <!--FONTS-->
+    <string name="font_normal">Poppins-Regular_1.ttf</string>
+    <string name="font_bold">Poppins-Bold_1.ttf</string>
+    <string name="font_italic_bold">Roboto-Italic_2.ttf</string>
+    <string name="font_bold_roboto">Roboto-Bold.ttf</string>
+    <string name="font_roboto">Roboto-Regular.ttf</string>
+    <string name="font_italic_light">Roboto-LightItalic_2.ttf</string>
+    <string name="font_handwriting">segoeprb_1.ttf</string>
+    <string name="welcome_to_drive">WELCOME TO DRIVE</string>
+    <string name="safe_fast_text">Safe, fast and comfortable</string>
+    <string name="driver_preference">Driver Preference</string>
+    <string name="female">Female</string>
+    <string name="any">Any</string>
+    <string name="select_language">Select Language</string>
+    <string name="english">English</string>
+    <string name="forgot_password_error">An email has been sent to your account with password reset link</string>
+    <string name="select_destination">Select destination with in range</string>
+    <string name="conform_password_error">confirm password does not match</string>
+    <string name="select">Select</string>
+    <string name="peak_factor1">Peak Factor : </string>
+    <string name="history">History</string>
+    <string name="car">Car :</string>
+    <string name="my_ride">My Ride</string>
+    <string name="duration">Duration</string>
+    <string name="captain">Captain</string>
+    <string name="plate_no">Plate #</string>
+    <string name="report_a_problem">Report a Problem</string>
+    <string name="language">Language</string>
+    <string name="wallet">Wallet</string>
+    <string name="use_credit_first">User Credit First</string>
+    <string name="captain_arrived">Captain Arrived</string>
+    <string name="rate_your_trip">Rate Your Trip</string>
+    <string name="schedule_ride_text">You have successfully scheduled your ride. Stay tuned we will notify you shortly!</string>
+    <string name="ride_type">Ride Type</string>
+
+
+</resources>

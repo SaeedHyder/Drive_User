@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:onClick="onClick"
+    android:layout_height="match_parent"
+    android:background="@drawable/drive_bg"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_userCreditFirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x10"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginRight="@dimen/x15"
+        android:layout_marginBottom="@dimen/x10"
+        android:orientation="horizontal">
+
+
+        <com.ingic.driveuser.ui.views.AnyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x25"
+            android:layout_marginStart="@dimen/x10"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text="@string/use_credit_first"
+            android:textColor="@color/black"
+            android:textSize="@dimen/x14"
+            app:typeface="Roboto-Regular.ttf"
+            />
+
+        <com.ingic.driveuser.ui.views.AnyTextView
+            android:id="@+id/txt_wallet_credit"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/x25"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/x14"
+            app:typeface="Roboto-Regular.ttf"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/x30"
+            android:gravity="end">
+        <ToggleButton
+            android:id="@+id/toggle_useWallet"
+            android:layout_width="@dimen/x50"
+            android:layout_height="@dimen/x35"
+            android:background="@drawable/selector_toggle"
+            android:checked="true"
+            android:gravity="right|center_vertical"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:alpha="0.6"
+        android:background="@drawable/text"/>
+
+    <LinearLayout
+        android:id="@+id/ll_payment_method"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginRight="@dimen/x15"
+        android:paddingTop="@dimen/x10"
+        android:paddingBottom="@dimen/x10"
+        android:layout_marginTop="@dimen/x5"
+        android:orientation="horizontal">
+
+
+        <com.ingic.driveuser.ui.views.AnyTextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x25"
+            android:layout_weight="0.8"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text="Payment Method"
+            android:textColor="@color/black"
+            android:textSize="@dimen/x14"
+            app:typeface="Roboto-Regular.ttf"
+            />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:alpha="0.6"
+        android:background="@drawable/text"/>
+
+
+</LinearLayout>

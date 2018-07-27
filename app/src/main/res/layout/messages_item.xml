@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+    <LinearLayout
+        android:id="@+id/ll_messages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/x15"
+        android:orientation="horizontal">
+
+        <com.ingic.driveuser.ui.views.AnyTextView
+            android:id="@+id/txt_messages"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:text="Please Wait"
+            android:textColor="@color/black"
+            android:textSize="@dimen/x16"
+            android:layout_height="wrap_content"
+            app:typeface="Roboto-Regular.ttf"/>
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/x30"
+            android:layout_weight="0.3"
+            android:text="@string/Send"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_button"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

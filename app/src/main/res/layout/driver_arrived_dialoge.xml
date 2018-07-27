@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/roundshapelayout"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/textLayout"
+        android:layout_width="@dimen/x340"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/x10"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.ingic.driveuser.ui.views.AnyTextView
+            android:id="@+id/txt_captainArrived"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:alpha="0.7"
+            android:gravity="center"
+            android:text="@string/captain_arrived"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:typeface="Roboto-Regular.ttf" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:layout_marginTop="@dimen/x10"
+            android:alpha="0.2"
+            android:background="@drawable/text" />
+
+
+        <com.ingic.driveuser.ui.views.AnyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x5"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_marginTop="@dimen/x10"
+            android:alpha="0.7"
+            android:gravity="center"
+            android:text="Your Captain has arrived"
+            android:textColor="@color/black"
+            android:textSize="@dimen/x17"
+            app:typeface="Roboto-Regular.ttf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x3"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:orientation="horizontal">
+
+            <com.ingic.driveuser.ui.views.AnyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/x5"
+                android:layout_weight="1"
+                android:alpha="0.7"
+                android:gravity="end"
+                android:text="Captain Name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x17"
+                app:typeface="Roboto-Regular.ttf" />
+
+            <com.ingic.driveuser.ui.views.AnyTextView
+                android:id="@+id/txt_captain_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x3"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="John Deo"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x17"
+                app:typeface="Roboto-Regular.ttf" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x3"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:orientation="horizontal">
+
+            <com.ingic.driveuser.ui.views.AnyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/x5"
+                android:layout_weight="1"
+                android:alpha="0.7"
+                android:gravity="end"
+                android:text="Car"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x17"
+                app:typeface="Roboto-Regular.ttf" />
+
+            <com.ingic.driveuser.ui.views.AnyTextView
+                android:id="@+id/txt_car"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x3"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="Audi A3"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x17"
+                app:typeface="Roboto-Regular.ttf" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x15"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:orientation="horizontal">
+
+            <com.ingic.driveuser.ui.views.AnyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/x5"
+                android:layout_weight="1"
+                android:alpha="0.7"
+                android:gravity="end"
+                android:text="Plate#"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x17"
+                app:typeface="Roboto-Regular.ttf" />
+
+            <com.ingic.driveuser.ui.views.AnyTextView
+                android:id="@+id/txt_plate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x3"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="xxxx-1017"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x17"
+                app:typeface="Roboto-Regular.ttf" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:alpha="0.2"
+        android:background="@drawable/text" />
+
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/x5"
+        android:layout_marginRight="@dimen/x7"
+        android:layout_weight="1"
+        android:background="@color/transparent"
+        android:text="@string/ok"
+        android:textAllCaps="false"
+        android:textColor="@color/app_golden2"
+        android:textSize="@dimen/x16" />
+
+
+</LinearLayout>

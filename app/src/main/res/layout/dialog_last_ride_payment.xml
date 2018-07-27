@@ -1,0 +1,102 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="@drawable/roundshapelayout"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/textLayout"
+        android:layout_width="@dimen/x340"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/x10"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.ingic.driveuser.ui.views.AnyTextView
+            android:id="@+id/txt_CancelRideHeading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:alpha="0.7"
+            android:gravity="center"
+            android:text="@string/remaining_payment"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:typeface="Roboto-Regular.ttf" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:layout_marginTop="@dimen/x10"
+            android:alpha="0.2"
+            android:background="@drawable/text" />
+
+
+        <com.ingic.driveuser.ui.views.AnyTextView
+            android:id="@+id/txt_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_marginTop="@dimen/x30"
+            android:layout_marginBottom="@dimen/x40"
+            android:alpha="0.7"
+            android:gravity="center_horizontal"
+            android:text="@string/ride_not_paid_dialog"
+            android:textColor="@color/black"
+            android:textSize="@dimen/x15"
+            app:typeface="Roboto-Regular.ttf" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:alpha="0.2"
+        android:background="@drawable/text"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_No"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/x7"
+            android:layout_marginBottom="@dimen/x5"
+            android:text="@string/no"
+            android:background="@color/transparent"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/x16" />
+
+        <View
+            android:layout_width="@dimen/x1"
+            android:layout_height="fill_parent"
+            android:alpha="0.1"
+            android:background="@drawable/text" />
+        <Button
+            android:id="@+id/btn_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_golden2"
+            android:layout_marginRight="@dimen/x7"
+            android:layout_marginBottom="@dimen/x5"
+            android:background="@color/transparent"
+            android:textSize="@dimen/x16"
+            android:text="@string/yes"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

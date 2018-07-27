@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="onClick"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/ll_contactUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginTop="@dimen/x20"
+        android:orientation="vertical">
+
+
+
+        <com.ingic.driveuser.ui.views.AnyEditTextView
+            android:id="@+id/edtContactUs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x200"
+            android:background="#F6F6F6"
+            android:hint="@string/type_your_message_here"
+            android:layout_marginBottom="@dimen/x15"
+            android:padding="@dimen/x15"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:maxHeight="@dimen/x100"
+            android:maxLines="10"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/x14"
+            app:emptyAllowed="false"
+            app:typeface="Roboto-Regular.ttf" />
+
+        <Button
+            android:id="@+id/SubmitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+</LinearLayout>

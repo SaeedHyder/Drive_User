@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sv_signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/ll_ProfileImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x20"
+            android:orientation="vertical">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/CircularImageSharePop1"
+                android:layout_width="@dimen/x100"
+                android:layout_height="@dimen/x100"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@drawable/picture" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/CircularImageSharePop"
+                android:layout_width="@dimen/x95"
+                android:layout_height="@dimen/x95"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/iv_camera"
+                android:layout_width="@dimen/x25"
+                android:layout_height="@dimen/x24"
+                android:layout_alignEnd="@+id/CircularImageSharePop"
+                android:layout_marginEnd="@dimen/x1"
+                android:layout_marginLeft="@dimen/x5"
+                android:layout_marginTop="@dimen/x69"
+                android:background="@drawable/circle_blue"
+                android:src="@drawable/drive_camera"
+                tools:ignore="ContentDescription" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_SignUpFields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x15"
+            android:layout_marginRight="@dimen/x15"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_userName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x40"
+                android:layout_marginTop="@dimen/x10"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_username"
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="@dimen/x20"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:contentDescription=""
+                    android:src="@drawable/drive_name"
+                    tools:ignore="ContentDescription" />
+
+                <com.ingic.driveuser.ui.views.AnyEditTextView
+                    android:id="@+id/edtUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x12"
+                    android:layout_marginRight="@dimen/x20"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/user_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/grey"
+
+                    android:textSize="@dimen/x14"
+                    app:testType="personName"
+                    app:typeface="Roboto-Regular.ttf" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:layout_marginEnd="@dimen/x5"
+                android:layout_marginStart="@dimen/x8"
+                android:layout_marginTop="@dimen/x3"
+                android:alpha="0.6"
+                android:background="@color/lineViewColor" />
+
+            <LinearLayout
+                android:id="@+id/ll_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x40"
+                android:layout_marginTop="@dimen/x10"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_email"
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="@dimen/x20"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:contentDescription=""
+                    android:src="@drawable/drive_email"
+                    tools:ignore="ContentDescription" />
+
+                <com.ingic.driveuser.ui.views.AnyEditTextView
+                    android:id="@+id/edtemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x12"
+                    android:layout_marginRight="@dimen/x20"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/email"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/grey"
+
+                    android:textSize="@dimen/x14"
+                    app:testType="email"
+                    app:typeface="Roboto-Regular.ttf" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:layout_marginEnd="@dimen/x5"
+                android:layout_marginStart="@dimen/x8"
+                android:layout_marginTop="@dimen/x3"
+                android:alpha="0.6"
+                android:background="@color/lineViewColor" />
+
+            <LinearLayout
+                android:id="@+id/ll_currentAddress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x40"
+                android:layout_marginTop="@dimen/x10"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_ll_currentAddress"
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="@dimen/x20"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:contentDescription=""
+                    android:src="@drawable/drive_address"
+                    tools:ignore="ContentDescription" />
+
+                <com.ingic.driveuser.ui.views.AnyEditTextView
+                    android:id="@+id/edtll_currentAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x12"
+                    android:layout_marginRight="@dimen/x20"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/current_address"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPostalAddress"
+                    android:maxLength="32"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/grey"
+
+                    android:textSize="@dimen/x14"
+                    app:testType="personName"
+                    app:typeface="Roboto-Regular.ttf" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:layout_marginEnd="@dimen/x5"
+                android:layout_marginStart="@dimen/x8"
+                android:layout_marginTop="@dimen/x3"
+                android:alpha="0.6"
+                android:background="@color/lineViewColor" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_MobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x40"
+                android:layout_marginTop="@dimen/x10"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_MobileNumber"
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="@dimen/x20"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:contentDescription=""
+                    android:src="@drawable/drive_mobile"
+                    tools:ignore="ContentDescription" />
+
+                <com.ingic.driveuser.ui.views.AnyEditTextView
+                    android:id="@+id/edtMobileNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x12"
+                    android:layout_marginRight="@dimen/x20"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/Mobile_Number"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:digits="+1234567890"
+                    android:maxLength="15"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/grey"
+                    android:textSize="@dimen/x14"
+                    app:testType="phone"
+                    app:typeface="Roboto-Regular.ttf" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:layout_marginEnd="@dimen/x5"
+                android:layout_marginStart="@dimen/x8"
+                android:layout_marginTop="@dimen/x3"
+                android:alpha="0.6"
+                android:background="@color/lineViewColor" />
+
+            <LinearLayout
+                android:id="@+id/ll_zipCode"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x40"
+                android:layout_marginTop="@dimen/x10"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_zipCode"
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="@dimen/x20"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:contentDescription=""
+                    android:src="@drawable/zipcode1"
+                    tools:ignore="ContentDescription" />
+
+                <com.ingic.driveuser.ui.views.AnyEditTextView
+                    android:id="@+id/edtzipCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x12"
+                    android:layout_marginRight="@dimen/x20"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/zip_code"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/grey"
+
+                    android:textSize="@dimen/x14"
+                    app:testType="numeric"
+                    app:typeface="Roboto-Regular.ttf" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:layout_marginEnd="@dimen/x5"
+                android:layout_marginStart="@dimen/x8"
+                android:layout_marginTop="@dimen/x3"
+                android:alpha="0.6"
+                android:background="@color/lineViewColor" />
+
+            <LinearLayout
+                android:id="@+id/ll_DateOfBirth"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x40"
+                android:layout_marginTop="@dimen/x10"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_DateOfBirth"
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="@dimen/x20"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:contentDescription=""
+                    android:src="@drawable/drive_cake"
+                    tools:ignore="ContentDescription" />
+
+                <com.ingic.driveuser.ui.views.AnyTextView
+                    android:id="@+id/edtDateOfBirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x12"
+                    android:layout_marginRight="@dimen/x20"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/dob"
+                    android:imeOptions="actionNext"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/grey"
+
+                    android:textSize="@dimen/x14"
+                    app:typeface="Roboto-Regular.ttf" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:layout_marginEnd="@dimen/x5"
+                android:layout_marginStart="@dimen/x8"
+                android:layout_marginTop="@dimen/x3"
+                android:alpha="0.6"
+                android:background="@color/lineViewColor" />
+
+            <LinearLayout
+                android:id="@+id/ll_Gender"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x40"
+                android:layout_marginTop="@dimen/x10"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_Gender"
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="@dimen/x20"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:contentDescription=""
+                    android:src="@drawable/drive_gender"
+                    tools:ignore="ContentDescription" />
+
+                <Spinner
+                    android:id="@+id/sp_Gender"
+                    style="@style/spinner_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x12"
+                    android:layout_marginRight="@dimen/x10"
+                    android:hint="@string/gender"
+                    android:imeOptions="actionNext"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/x15" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:layout_marginEnd="@dimen/x5"
+                android:layout_marginStart="@dimen/x8"
+                android:layout_marginTop="@dimen/x3"
+                android:alpha="0.6"
+                android:background="@color/lineViewColor" />
+
+            <LinearLayout
+                android:id="@+id/ll_invitationCode"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x40"
+                android:layout_marginTop="@dimen/x10"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_invitationCode"
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="@dimen/x20"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:contentDescription=""
+                    android:src="@drawable/invitationcode"
+                    tools:ignore="ContentDescription" />
+
+                <com.ingic.driveuser.ui.views.AnyEditTextView
+                    android:id="@+id/txt_invitationCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x12"
+                    android:layout_marginRight="@dimen/x20"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/invitation_code"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/grey"
+
+                    android:textSize="@dimen/x14"
+                    app:testType="numeric"
+                    app:typeface="Roboto-Regular.ttf" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:layout_marginEnd="@dimen/x5"
+                android:layout_marginStart="@dimen/x8"
+                android:layout_marginTop="@dimen/x3"
+                android:alpha="0.6"
+                android:background="@color/lineViewColor" />
+
+            <LinearLayout
+                android:id="@+id/ll_Password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x40"
+                android:layout_marginTop="@dimen/x10"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_Password"
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="@dimen/x20"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:contentDescription=""
+                    android:src="@drawable/drive_lock"
+                    tools:ignore="ContentDescription" />
+
+                <com.ingic.driveuser.ui.views.AnyEditTextView
+                    android:id="@+id/edtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x12"
+                    android:layout_marginRight="@dimen/x20"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/password"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/grey"
+
+                    android:textSize="@dimen/x14"
+                    app:typeface="Roboto-Regular.ttf" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:layout_marginEnd="@dimen/x5"
+                android:layout_marginStart="@dimen/x8"
+                android:layout_marginTop="@dimen/x3"
+                android:alpha="0.6"
+                android:background="@color/lineViewColor" />
+
+            <LinearLayout
+                android:id="@+id/ll_ConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x40"
+                android:layout_marginTop="@dimen/x10"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_ConfirmPassword"
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="@dimen/x20"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:contentDescription=""
+                    android:src="@drawable/drive_lock"
+                    tools:ignore="ContentDescription" />
+
+                <com.ingic.driveuser.ui.views.AnyEditTextView
+                    android:id="@+id/edt_ConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x12"
+                    android:layout_marginRight="@dimen/x20"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/confirm_pass"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/grey"
+
+                    android:textSize="@dimen/x14"
+                    app:typeface="Roboto-Regular.ttf" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:layout_marginEnd="@dimen/x5"
+                android:layout_marginStart="@dimen/x8"
+                android:layout_marginTop="@dimen/x3"
+                android:alpha="0.6"
+                android:background="@color/lineViewColor" />
+
+            <Button
+                android:id="@+id/btn_submuit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x45"
+                android:layout_marginTop="@dimen/x18"
+                android:background="@drawable/rounded_button"
+                android:text="@string/sign_up"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x14" />
+
+
+            <RelativeLayout
+                android:id="@+id/ll_loginfacebook"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x45"
+                android:layout_marginTop="@dimen/x18"
+                android:background="@drawable/rounder_white_button"
+                android:orientation="horizontal">
+
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/loginButton_fb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_facebookIcon"
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="@dimen/x20"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x10"
+                    android:layout_toStartOf="@+id/txtFacebookLogin"
+                    android:contentDescription="asd"
+                    android:src="@drawable/drive_fb_icon" />
+
+                <com.ingic.driveuser.ui.views.AnyTextView
+                    android:id="@+id/txtFacebookLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/iv_facebookIcon"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/sign_with_facebook"
+                    android:textColor="@color/facebookBlue"
+                    android:textSize="@dimen/x15"
+                    app:testType="email"
+                    app:typeface="Roboto-Regular.ttf" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/x15"
+                android:layout_marginTop="@dimen/x15"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chk_read"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingStart="@dimen/x7"
+                    android:layout_marginEnd="@dimen/x4"
+                    android:layout_gravity="center_horizontal"
+                    android:button="@drawable/selector_chkbox"
+                    android:text="@string/i_have_read_the_term_and_conditions"
+                    android:textColor="@color/white" />
+
+                <com.ingic.driveuser.ui.views.AnyTextView
+                    android:id="@+id/txt_TermCond"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terms_and_condition"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x14"
+                    android:textStyle="bold"
+                    app:typeface="Roboto-Regular.ttf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_bottomText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/x20"
+                android:layout_marginTop="@dimen/x10"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+
+                <com.ingic.driveuser.ui.views.AnyTextView
+                    android:id="@+id/txt_clickHere"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x5"
+                    android:text="@string/click_here"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x14"
+                    android:textStyle="bold"
+                    app:typeface="Roboto-Regular.ttf" />
+
+                <com.ingic.driveuser.ui.views.AnyTextView
+                    android:id="@+id/txt_toAccept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x5"
+                    android:text="@string/to_accept"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x12"
+                    app:typeface="Roboto-Regular.ttf" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

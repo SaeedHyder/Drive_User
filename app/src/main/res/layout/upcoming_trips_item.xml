@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_mainframe"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_pastTrips"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x150"
+        android:src="@drawable/trip"
+        android:visibility="gone"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:id="@+id/ll_track_ride"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40"
+        android:visibility="gone">
+
+        <com.ingic.driveuser.ui.views.AnyTextView
+            android:id="@+id/txt_track_ride"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Track Your Ride"
+            android:alpha="0.8"
+            android:textColor="@color/black"
+            android:textSize="@dimen/x14"
+            android:gravity="center"
+            app:typeface="@string/font_bold"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:alpha="0.2"
+        android:background="@drawable/text" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/x10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x50"
+            android:layout_gravity="center_vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/x20"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_marginRight="@dimen/x15"
+                android:scaleType="centerInside"
+                android:src="@drawable/drive_pickup_circle" />
+
+            <com.ingic.driveuser.ui.views.AnyTextView
+                android:id="@+id/txt_pickup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/x10"
+                android:layout_toEndOf="@+id/imageView"
+                android:alpha="0.5"
+                android:gravity="start"
+                android:padding="@dimen/x3"
+                android:text="@string/pickup_location"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x10"
+                app:typeface="Roboto-Regular.ttf" />
+
+            <com.ingic.driveuser.ui.views.AnyTextView
+                android:id="@+id/txt_pick_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_pickup"
+                android:layout_gravity="start|center_vertical"
+                android:layout_toEndOf="@+id/imageView"
+                android:alpha="0.8"
+                android:gravity="start|center_vertical"
+                android:scrollbars="horizontal"
+                android:singleLine="true"
+                android:text="@string/lorem_ipsum"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x14"
+                app:typeface="Roboto-Regular.ttf" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/imageView"
+                android:layout_marginLeft="@dimen/x24"
+                android:src="@drawable/line1" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/x11"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/imageView"
+                android:layout_marginLeft="@dimen/x24"
+                android:src="@drawable/line1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:layout_marginLeft="@dimen/x25"
+                android:layout_marginRight="@dimen/x15"
+                android:layout_marginTop="@dimen/x5"
+                android:alpha="0.2"
+                android:background="@drawable/text" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x50"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:visibility="visible">
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/imageView_destination"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/x24"
+                android:src="@drawable/line1" />
+
+            <ImageView
+                android:id="@+id/imageView_destination"
+                android:layout_width="@dimen/x20"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_marginRight="@dimen/x15"
+                android:scaleType="centerInside"
+                android:src="@drawable/drive_destination_icon" />
+
+            <com.ingic.driveuser.ui.views.AnyTextView
+                android:id="@+id/txt_destination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/x10"
+                android:layout_toEndOf="@+id/imageView_destination"
+                android:alpha="0.5"
+                android:gravity="start"
+                android:padding="@dimen/x3"
+                android:text="Destination Location"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x10"
+                app:typeface="Roboto-Regular.ttf" />
+
+            <com.ingic.driveuser.ui.views.AnyTextView
+                android:id="@+id/txt_destination_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/x5"
+                android:layout_toEndOf="@+id/imageView_destination"
+                android:alpha="0.8"
+                android:gravity="start|center_vertical"
+                android:scrollbars="horizontal"
+                android:singleLine="true"
+                android:text="@string/lorem_ipsum"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x14"
+                app:typeface="Roboto-Regular.ttf" />
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:layout_marginLeft="@dimen/x50"
+            android:layout_marginRight="@dimen/x15"
+            android:layout_marginTop="@dimen/x5"
+            android:alpha="0.2"
+            android:background="@drawable/text" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:alpha="0.2"
+        android:background="@drawable/text" />
+
+    <LinearLayout
+        android:id="@+id/ll_pastTripDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"
+        android:layout_marginTop="@dimen/x10"
+        android:layout_marginBottom="@dimen/x10"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.ingic.driveuser.ui.views.AnyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.5"
+                android:text="@string/TimeDate"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x13"
+                app:typeface="Roboto-Regular.ttf" />
+
+            <com.ingic.driveuser.ui.views.AnyTextView
+                android:id="@+id/txt_time_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x3"
+                android:text="13-06-17  1:36PM"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x13"
+                app:typeface="Roboto-Regular.ttf" />
+
+
+            <com.ingic.driveuser.ui.views.AnyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:alpha="0.5"
+                android:gravity="right"
+                android:paddingRight="@dimen/x3"
+                android:text="@string/car"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x13"
+                app:typeface="Roboto-Regular.ttf" />
+
+            <com.ingic.driveuser.ui.views.AnyTextView
+                android:id="@+id/txt_car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x3"
+                android:text="Mercedes"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x13"
+                app:typeface="Roboto-Regular.ttf" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x5"
+            android:orientation="horizontal"
+            >
+
+            <com.ingic.driveuser.ui.views.AnyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.5"
+                android:text="@string/estimated_fare_"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x13"
+                app:typeface="Roboto-Regular.ttf" />
+
+            <com.ingic.driveuser.ui.views.AnyTextView
+                android:id="@+id/txt_fare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x3"
+                android:text="AED 200.00"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x13"
+                app:typeface="Roboto-Regular.ttf" />
+
+            <com.ingic.driveuser.ui.views.AnyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:alpha="0.5"
+                android:gravity="right"
+                android:paddingRight="@dimen/x3"
+                android:text="@string/type"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x13"
+                app:typeface="Roboto-Regular.ttf" />
+
+            <com.ingic.driveuser.ui.views.AnyTextView
+                android:id="@+id/txt_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x3"
+                android:text="Business"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x13"
+                app:typeface="Roboto-Regular.ttf" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:alpha="0.2"
+        android:layout_marginBottom="@dimen/x10"
+        android:background="@drawable/text" />
+
+
+</LinearLayout>

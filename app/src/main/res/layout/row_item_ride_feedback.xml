@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+
+        <RelativeLayout
+            android:id="@+id/ll_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x16"
+            android:layout_marginRight="@dimen/x8"
+            android:layout_marginTop="@dimen/x5"
+            android:background="@drawable/black_border"
+            android:orientation="horizontal">
+
+            <com.ingic.driveuser.ui.views.AnyTextView
+                android:id="@+id/txt_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.6"
+                android:gravity="center"
+                android:paddingTop="@dimen/x10"
+                android:paddingBottom="@dimen/x10"
+                android:layout_centerHorizontal="true"
+                android:text="@string/driving"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x17"
+                app:typeface="Roboto-Regular.ttf"
+                android:layout_alignParentTop="true" />
+
+            <ImageView
+                android:id="@+id/drivingTick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/driving_tick"
+                android:visibility="gone"
+                android:layout_marginEnd="13dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+
+</LinearLayout>

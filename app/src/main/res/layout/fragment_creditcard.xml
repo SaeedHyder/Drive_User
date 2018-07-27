@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drive_bg2"
+   >
+
+  <LinearLayout
+      android:id="@+id/ll_creditCardFields"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="@dimen/x20"
+      android:layout_marginRight="@dimen/x20"
+      android:orientation="vertical">
+
+  <LinearLayout
+      android:id="@+id/ll_CreditCardNum"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/x50"
+      android:layout_marginTop="@dimen/x20"
+
+      android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_CreditCardNum"
+        android:layout_width="@dimen/x20"
+        android:layout_height="@dimen/x20"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x10"
+        android:contentDescription=""
+        android:src="@drawable/drive_card_number"
+        tools:ignore="ContentDescription" />
+
+    <com.ingic.driveuser.ui.views.AnyEditTextView
+        android:id="@+id/edtCreditCardNum"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x12"
+        android:layout_marginRight="@dimen/x20"
+        android:hint="@string/credit_card_number"
+        android:background="@android:color/transparent"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="30"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        android:textSize="@dimen/x14"
+        app:typeface="Roboto-Regular.ttf" />
+
+  </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:layout_marginEnd="@dimen/x5"
+        android:layout_marginStart="@dimen/x8"
+        android:layout_marginTop="@dimen/x3"
+        android:alpha="0.3"
+        android:background="@color/lineViewColor" />
+
+  <LinearLayout
+      android:id="@+id/ll_ExpirationDate"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/x50"
+
+
+      android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_ExpirationDate"
+        android:layout_width="@dimen/x20"
+        android:layout_height="@dimen/x20"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x10"
+        android:contentDescription=""
+        android:src="@drawable/drive_calender"
+        tools:ignore="ContentDescription" />
+
+    <com.ingic.driveuser.ui.views.AnyTextView
+        android:id="@+id/edtExpirationDate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x12"
+        android:layout_marginRight="@dimen/x20"
+        android:hint="@string/expiration_date"
+        android:gravity="center_vertical"
+        android:background="@android:color/transparent"
+        android:imeOptions="actionNext"
+        android:inputType="date"
+        android:maxLength="30"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        android:textSize="@dimen/x14"
+        app:typeface="Roboto-Regular.ttf" />
+
+  </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:layout_marginEnd="@dimen/x5"
+        android:layout_marginStart="@dimen/x8"
+        android:layout_marginTop="@dimen/x3"
+        android:alpha="0.3"
+        android:background="@color/lineViewColor" />
+
+  <LinearLayout
+      android:id="@+id/ll_CVV"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/x50"
+
+
+      android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_ll_CVV"
+        android:layout_width="@dimen/x20"
+        android:layout_height="@dimen/x20"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x10"
+        android:contentDescription=""
+        android:src="@drawable/drive_cvv1"
+        tools:ignore="ContentDescription" />
+
+    <com.ingic.driveuser.ui.views.AnyEditTextView
+        android:id="@+id/edt_CVV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x12"
+        android:layout_marginRight="@dimen/x20"
+        android:hint="@string/cvv"
+        android:background="@android:color/transparent"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="3"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        android:textSize="@dimen/x14"
+        app:typeface="Roboto-Regular.ttf" />
+
+  </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:layout_marginEnd="@dimen/x5"
+        android:layout_marginStart="@dimen/x8"
+        android:layout_marginTop="@dimen/x3"
+        android:alpha="0.3"
+        android:background="@color/lineViewColor" />
+
+  <LinearLayout
+      android:id="@+id/ll_NameOnCard"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/x50"
+
+
+      android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_NameOnCard"
+        android:layout_width="@dimen/x20"
+        android:layout_height="@dimen/x20"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x10"
+        android:contentDescription=""
+        android:src="@drawable/drive_name"
+        tools:ignore="ContentDescription" />
+
+    <com.ingic.driveuser.ui.views.AnyEditTextView
+        android:id="@+id/edtNameOnCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x12"
+        android:layout_marginRight="@dimen/x20"
+        android:background="@android:color/transparent"
+        android:imeOptions="actionDone"
+        android:hint="@string/name_appearing_on_card"
+        android:inputType="text"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:maxLength="30"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        android:textSize="@dimen/x14"
+        app:typeface="Roboto-Regular.ttf" />
+
+  </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:layout_marginEnd="@dimen/x5"
+        android:layout_marginStart="@dimen/x8"
+        android:layout_marginTop="@dimen/x3"
+        android:alpha="0.3"
+        android:background="@color/lineViewColor" />
+  </LinearLayout>
+
+  <Button
+      android:id="@+id/UpdateButton"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="@dimen/x20"
+      android:layout_marginRight="@dimen/x20"
+      android:layout_marginTop="@dimen/x20"
+      android:background="@drawable/rounded_button"
+      android:text="@string/update"
+      android:textColor="@color/black" />
+
+
+</LinearLayout>

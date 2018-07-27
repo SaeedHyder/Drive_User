@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/header_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/x50"
+    >
+
+
+    <ImageView
+        android:id="@+id/btnLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x10"
+        android:padding="@dimen/x9"
+        android:scaleType="fitXY"
+
+        android:visibility="visible"
+        tools:ignore="ContentDescription" />
+
+
+    <com.ingic.driveuser.ui.views.AnyTextView
+        android:id="@+id/txt_subHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Template"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x18"
+        android:visibility="gone"
+        app:typeface="OpenSans-Regular.ttf" />
+
+    <ImageView
+        android:id="@+id/btnRight1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/x15"
+        android:padding="@dimen/x5"
+
+        android:visibility="visible"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/btnRight"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/btnRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/x10"
+        android:padding="@dimen/x5"
+
+        android:visibility="visible"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

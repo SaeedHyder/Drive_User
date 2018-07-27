@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/drive_bg2">
+
+        <com.ingic.driveuser.ui.views.TitleBar
+            android:id="@+id/header_main"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/x50"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible"
+
+            />
+
+
+    <RelativeLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <FrameLayout
+            android:id="@+id/mainFrameLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+          >
+        </FrameLayout>
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:indeterminate="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/sideMneuFragmentContainer"
+        android:layout_width="@dimen/x250"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:choiceMode="singleChoice"
+
+        android:dividerHeight="1dp" />
+
+</android.support.v4.widget.DrawerLayout>

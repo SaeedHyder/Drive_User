@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:windowBackground"
+    android:clickable="false"
+    android:orientation="vertical"
+    android:padding="@dimen/x10"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/x10">
+
+        <com.ingic.driveuser.ui.views.AnyTextView
+            android:id="@+id/txt_heading1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.6"
+            android:gravity="center"
+            android:padding="@dimen/x7"
+            android:text="@string/select_a_pickup_date_and_time"
+            android:textColor="@color/black"
+            android:textSize="@dimen/x18"
+            app:typeface="Roboto-Regular.ttf" />
+
+        <LinearLayout
+            android:id="@+id/ll_pickers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_heading1"
+            android:layout_marginTop="@dimen/x10"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x2"
+                android:background="@drawable/line1" />
+
+            <com.ingic.driveuser.ui.views.AnyTextView
+                android:id="@+id/txt_datepicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:padding="@dimen/x10"
+                android:text="Select Pickup Date"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x15"
+                android:textStyle="bold"
+                app:typeface="Roboto-Bold.ttf" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x2"
+                android:background="@drawable/line1" />
+
+            <com.ingic.driveuser.ui.views.AnyTextView
+                android:id="@+id/txt_timepicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/x10"
+                android:text="@string/select_pickup_time"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x15"
+                android:textStyle="bold"
+                app:typeface="Roboto-Bold.ttf" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x2"
+                android:background="@drawable/line1" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/SubmitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_pickers"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/x10"
+            android:layout_marginLeft="@dimen/x16"
+            android:layout_marginRight="@dimen/x16"
+            android:layout_marginTop="@dimen/x20"
+            android:background="@drawable/rounded_button"
+            android:text="ok"
+            android:textColor="@color/black"
+            android:textSize="@dimen/x16" />
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

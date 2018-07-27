@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/drive_bg2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <LinearLayout
+        android:id="@+id/ll_driver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/x10"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginTop="@dimen/x10"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_driver"
+            android:layout_width="@dimen/x40"
+            android:layout_height="@dimen/x40"
+            android:src="@drawable/img_holder" />
+
+        <com.ingic.driveuser.ui.views.AnyTextView
+            android:id="@+id/txt_drivername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x10"
+            android:gravity="start"
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/x16"
+            app:typeface="Roboto-Regular.ttf" />
+    </LinearLayout>
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:alpha="0.4"
+            android:background="#e8e9e8" />
+
+    <ListView
+        android:id="@+id/sideoptions"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/x10"
+        android:layout_marginTop="@dimen/x10"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_weight="0.6"/>
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:alpha="0.4"
+            android:background="#e8e9e8" />
+
+    <com.ingic.driveuser.ui.views.AnyTextView
+        android:id="@+id/txt_driveoption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginTop="@dimen/x10"
+
+        android:gravity="start"
+        android:text="@string/drive_with_fastcab"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x16"
+        app:typeface="Roboto-Regular.ttf" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x20" />
+
+    </LinearLayout>
+</RelativeLayout>

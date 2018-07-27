@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drive_bg"
+    android:orientation="vertical">
+
+    <com.ingic.driveuser.ui.views.AnyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/x15"
+        android:layout_marginTop="@dimen/x15"
+        android:gravity="center"
+        android:text="What could be improved?"
+        android:textColor="@color/black"
+        android:textSize="@dimen/x18"
+        app:typeface="Roboto-Regular.ttf" />
+
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x130"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp">
+
+    </GridView>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:layout_marginTop="@dimen/x20"
+        android:alpha="0.2"
+        android:background="@drawable/text" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.ingic.driveuser.ui.views.AnyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x10"
+                android:layout_marginTop="@dimen/x10"
+                android:gravity="center"
+                android:text="@string/others_specify"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x18"
+                app:typeface="Roboto-Regular.ttf" />
+
+            <com.ingic.driveuser.ui.views.AnyEditTextView
+                android:id="@+id/edtComments"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x100"
+                android:layout_marginBottom="@dimen/x5"
+                android:layout_marginLeft="@dimen/x16"
+                android:layout_marginRight="@dimen/x16"
+                android:background="@drawable/bg_rounded_white"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="@string/comment"
+                android:inputType="textMultiLine"
+                android:maxHeight="@dimen/x100"
+                android:maxLines="10"
+                android:overScrollMode="always"
+                android:padding="@dimen/x15"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/x14"
+                app:emptyAllowed="false"
+                app:typeface="Roboto-Regular.ttf" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:layout_marginTop="@dimen/x10"
+                android:alpha="0.2"
+                android:background="@drawable/text" />
+
+
+            <com.ingic.driveuser.ui.views.AnyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x10"
+                android:layout_marginTop="@dimen/x20"
+                android:gravity="center"
+                android:text="@string/rate_app"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x18"
+                app:typeface="Roboto-Regular.ttf" />
+
+
+            <com.ingic.driveuser.ui.views.CustomRatingBar
+                android:id="@+id/rbAddRating"
+                android:layout_width="@dimen/x200"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="@dimen/x10"
+                android:layout_marginTop="@dimen/x5"
+                android:isIndicator="true"
+                android:visibility="visible"
+                app:maxStars="5"
+                app:starOff="@drawable/drive_star2"
+                app:starOn="@drawable/drive_star"
+                app:starPadding="@dimen/x8"
+                app:stars="3" />
+
+            <Button
+                android:id="@+id/SubmitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/x5"
+                android:layout_marginLeft="@dimen/x16"
+                android:layout_marginRight="@dimen/x16"
+                android:layout_marginTop="@dimen/x5"
+                android:background="@drawable/rounded_button"
+                android:text="@string/submit"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+
